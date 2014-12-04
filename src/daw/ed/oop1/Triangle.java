@@ -1,7 +1,7 @@
 package daw.ed.oop1;
 
 /**
- *
+ * Triangle class
  * @author carlos
  */
 public class Triangle {

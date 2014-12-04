@@ -1,7 +1,7 @@
 package daw.ed.oop1;
 
 /**
- *
+ * Rectangle class
  * @author carlos
  */
 public class Rectangle {

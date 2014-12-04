@@ -70,7 +70,7 @@ public class Fraction {
      * Fraction decimal value
      * @return fraction decimal value
      */
-    public float getValue() {
+    public double getValue() {
         return this.numerator/(float)this.denominator;
     }
     
