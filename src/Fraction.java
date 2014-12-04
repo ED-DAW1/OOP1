@@ -91,4 +91,12 @@ public class Fraction {
                 (this.denominator == ((Fraction) o).denominator);
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 97 * hash + this.numerator;
+        hash = 97 * hash + this.denominator;
+        return hash;
+    }
+
 }
