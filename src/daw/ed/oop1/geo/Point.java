@@ -1,5 +1,4 @@
-
-package daw.ed.oop1;
+package daw.ed.oop1.geo;
 
 /**
  * Poinit class

@@ -1,4 +1,4 @@
-package daw.ed.oop1;
+package daw.ed.oop1.geo;
 
 import org.junit.Before;
 import org.junit.Test;

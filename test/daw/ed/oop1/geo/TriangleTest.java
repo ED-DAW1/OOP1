@@ -1,4 +1,4 @@
-package daw.ed.oop1;
+package daw.ed.oop1.geo;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class TriangleTest {
     public void testSetterAndGetter() {
         t.setBase(50);
         t.setHeight(80);
-        assertTrue(t.getBase() == 50 && t.getBase() == 80);
+        assertTrue(t.getBase() == 50 && t.getHeight() == 80);
     }
 
        
@@ -31,7 +31,7 @@ public class TriangleTest {
 
     @Test
     public void testToString() {
-        assertEquals("Triángulo{base:10, altura:20}",t);
+        assertEquals("Triángulo{base:10, altura:20}",t.toString());
     }
     
 }
