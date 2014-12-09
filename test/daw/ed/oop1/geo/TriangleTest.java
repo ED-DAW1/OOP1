@@ -17,6 +17,11 @@ public class TriangleTest {
     }
     
     @Test
+    public void testConstructor() {
+        assertTrue(t instanceof Triangle);
+    }
+    
+    @Test
     public void testSetterAndGetter() {
         t.setBase(50);
         t.setHeight(80);

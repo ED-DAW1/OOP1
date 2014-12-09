@@ -18,6 +18,11 @@ public class RectangleTest {
     }
 
     @Test
+    public void testConstructor() {
+        assertTrue(r instanceof Rectangle);
+    }
+    
+    @Test
     public void testSettersAndGetters() {
         r.setLength(10);
         r.setWidht(20);

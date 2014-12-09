@@ -19,8 +19,7 @@ public class PointTest {
 
     @Test
     public void testConstructor() {
-        fail("not implemented");
-        //assertTrue(p instance of(Point));        
+        assertTrue(p instanceof Point);        
     }
 
     
