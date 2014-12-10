@@ -22,7 +22,7 @@ public class OOP1 {
         c2.setRadius(50);
         c2.setColor(Color.yellow);
 
-        // animate them
+        // set canvas
         StdDraw.setXscale(-100, +100);
         StdDraw.setYscale(-100, +100);
         
