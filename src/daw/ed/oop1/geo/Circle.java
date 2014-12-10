@@ -28,95 +28,14 @@ public class Circle {
     /**
      * Default constructor
      */
-    public Circle() {
-        radius = DEFAULT_RADIUS;
-        color = DEFAULT_COLOR;
-        p = new Point();
-        p.setX(0);
-        p.setY(0);
-    }
-
-    /**
-     * Constructor
-     *
-     * @param radius
-     * @param xy center of circle
-     */
-    public Circle(double radius, Point xy) {
-        this();
-        this.radius = radius;
-        color = DEFAULT_COLOR;
-    }
-
-    /**
-     * Constructor
-     *
-     * @param radius
-     * @param xy center of circle
-     * @param color
-     */
-    public Circle(double radius, Point xy, Color color) {
-        this(radius, xy);
-        this.color = color;
-    }
-
-    /**
-     * Get circle radius
-     *
-     * @return radius
-     */
-    public double getRadius() {
-        return radius;
-    }
-
-    /**
-     * Set circle radius
-     *
-     * @param radius
-     */
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    /**
-     *
-     * @return
-     */
-    public Color getColor() {
-        return color;
-    }
-
-    /**
-     *
-     * @param color
-     */
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    /**
-     *
-     * @return
-     */
-    @Override
-    public String toString() {
-        return String.format("Círculo{radio:%.2f,x:%.2f,y:%.2f}", radius, p.getX(), p.getY());
-    }
-
-    /**
-     *
-     * @return
-     */
+    public Circle() {}
+    
+        
     public double getArea() {
-        return radius * radius * Math.PI;
     }
 
-    /**
-     *
-     * @return
-     */
+    
     public double getPerimeter() {
-        return 2 * radius * Math.PI;
     }
 
     /**

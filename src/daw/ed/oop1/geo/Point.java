@@ -35,9 +35,6 @@ public class Point {
     }
 
     public double distance(Point p) {
-        return 5.0;
-        //return Math.sqrt(Math.pow(5 - 4,2) +
-        //                Math.pow(10-5,2));
-        //throw new UnsupportedOperationException("Not supported yet.");
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
