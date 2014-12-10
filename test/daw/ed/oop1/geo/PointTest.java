@@ -32,22 +32,8 @@ public class PointTest {
 
     
     @Test
-    public void addPoint() {
-        p.add(new Point(4.0,10.0));        
-        assertEquals(new Point(9.0,20.0),p);        
+    public void testDistancePoint() {
+        double d = p.distance(new Point(4.0,5.0));        
+        assertEquals(5.55,d,0.01);        
     }
-    
-    @Test
-    public void subPoint() {
-        p.sub(new Point(6.0,5.0));
-        assertEquals(new Point(-1.0,5.0),p);        
-        
-    }
-    
-    @Test
-    public void scalePoint() {
-        p.scale(4.0);
-        assertEquals(new Point(20.0,40.0),p);        
-    }    
-    
 }
