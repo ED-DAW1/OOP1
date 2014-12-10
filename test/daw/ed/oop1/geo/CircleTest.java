@@ -47,7 +47,7 @@ public class CircleTest {
     
     @Test
     public void testToString() {
-        assertEquals("Círculo{radio:2.60,x:0.00,y:0.00}"
+        assertEquals("Círculo{radio:2,60,x:0,00,y:0,00}"
                 ,c.toString());
         
     }

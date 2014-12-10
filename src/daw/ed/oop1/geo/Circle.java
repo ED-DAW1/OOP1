@@ -9,8 +9,16 @@ import edu.princeton.cs.introcs.StdDraw;
  */
 public class Circle {   
    // Public constants
-   public static final double DEFAULT_RADIUS = 8.8;
-   public static final Color DEFAULT_COLOR  = Color.RED;
+
+    /**
+     * DEFAULT RADIUS
+     */
+       public static final double DEFAULT_RADIUS = 8.8;
+
+    /**
+     * DEFAULT COLOR
+     */
+    public static final Color DEFAULT_COLOR  = Color.RED;
    
    // Private variables
    private double radius;
@@ -108,7 +116,10 @@ public class Circle {
        return 2*radius*Math.PI;
    }
    
-   public void render() {
+    /**
+     * render the circle
+     */
+    public void render() {
        Color tmp = StdDraw.getPenColor();
        StdDraw.setPenColor(this.color);
        StdDraw.filledCircle(this.p.getX(),this.p.getY(),this.radius);

@@ -1,4 +1,4 @@
-package daw.ed.oop1;
+package daw.ed.oop1.math;
 
 /**
  * Fraction class
