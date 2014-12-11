@@ -34,6 +34,14 @@ public class PointTest {
     
     @Test
     public void testDistance() {
-          
+        double d;
+        d = p.distance(new Point(4.0,5.0));        
+        assertEquals(5.09,d,0.01); 
+        d = p.distance(4.0,5.0);
+        assertEquals(5.09,d,0.01);
+        d = p.distance(new Point(9.0,8.0));
+        assertEquals(6.4031,d,0.01);
+        d = p.distance(9.0,8.0);
+        assertEquals(6.4031,d,0.01);
     }
 }
