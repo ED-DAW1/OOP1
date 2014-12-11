@@ -15,14 +15,14 @@ public class CircleTest {
     
     @Before
     public void setUp() {
-        c = new Circle(2.6,new Point(0,0),Color.BLUE);
+        c = new Circle(new Point(0.0,0.0),2.6,Color.BLUE);
     }
 
     @Test
     public void testCircleConstructors() {
         assertTrue(new Circle() instanceof Circle);
-        assertTrue(new Circle(1.6,new Point(0,0),Color.BLUE) instanceof Circle);
-        assertTrue(new Circle(2.6,new Point(0,0)) instanceof Circle);
+        assertTrue(new Circle(new Point(0.0,0.0),2.6,Color.BLUE) instanceof Circle);
+        assertTrue(new Circle(new Point(0.0,0.0),2.6) instanceof Circle);
         assertEquals(2.6,c.getRadius(),0.0001);
         assertEquals(Color.BLUE,c.getColor());
     }
@@ -31,8 +31,10 @@ public class CircleTest {
     public void testCircleSettersAndGetters() {
         c.setRadius(4.9);
         c.setColor(Color.GREEN);
+        c.setCenter(new Point(5.0,6.0));
         assertTrue(c.getRadius() == 4.9);
         assertTrue(Color.GREEN.equals(c.getColor()));
+        assertTrue(c.getCenter().getX() == 5.0 && c.getCenter().getX() == 6.0);
     }
     
     @Test
@@ -49,6 +51,13 @@ public class CircleTest {
     public void testToString() {
         assertEquals("Círculo{radio:2,60,x:0,00,y:0,00}"
                 ,c.toString());
+        
+    }
+    
+    @Test
+    public void testDistance() {
+        double dist = c.distance(new Circle(3.0,4.0,5.0));
+        assertEquals(0.00,dist,0.01);
         
     }
     

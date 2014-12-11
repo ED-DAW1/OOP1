@@ -23,19 +23,68 @@ public class Circle {
     // Private variables
     private double radius;
     private Color color;
-    private Point p;
+    private Point center;
 
     /**
      * Default constructor
      */
-    public Circle() {}
+    public Circle() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
     
-        
+    public Circle(Point center, double r) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public Circle(double x, double y, double r) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public Circle(Point center, double r, Color BLUE) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public double getRadius() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+
+    }
+
+    public void setRadius(double radius) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public Color getColor() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public void setColor(Color color) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public Point getCenter() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+    
+    public void setCenter(double x, double y) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public void setCenter(Point center) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+    
+            
     public double getArea() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     
     public double getPerimeter() {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+    
+    public double distance(Circle that) {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     /**
@@ -44,7 +93,11 @@ public class Circle {
     public void render() {
         Color tmp = StdDraw.getPenColor();
         StdDraw.setPenColor(this.color);
-        StdDraw.filledCircle(this.p.getX(), this.p.getY(), this.radius);
+        StdDraw.filledCircle(
+                this.center.getX(),
+                this.center.getY(), this.radius);
         StdDraw.setPenColor(tmp);
     }
+
+    
 }

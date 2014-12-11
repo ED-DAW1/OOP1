@@ -17,7 +17,7 @@ public class OOP1 {
     public static void main(String[] args) {
 
         // create and initialize two circles
-        Circle c1 = new Circle(10.0,new Point(50,0));
+        Circle c1 = new Circle(50,0,10);
         Circle c2 = new Circle();
         c2.setRadius(50);
         c2.setColor(Color.yellow);
