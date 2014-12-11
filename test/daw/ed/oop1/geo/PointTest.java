@@ -28,26 +28,20 @@ public class PointTest {
         p.setX(10.0);
         p.setY(20.0);
         assertTrue(p.getX() == 10.0 && p.getY() == 20.0);   
+        p.setXY(80.0,90.0);
+        assertTrue(p.getX() == 80.0 && p.getY() == 90.0);   
+    }
+    
+    @Test
+    public void testDistance() {
+        double dist;
+        dist = p.distance(new Point(9.0,8.0));
+        assertEquals(0.000,dist,0.01);
+        dist = p.distance(9.0,8.0);
+        assertEquals(0.000,dist,0.01);
     }
 
     
-    @Test
-    public void addPoint() {
-        p.add(new Point(4.0,10.0));        
-        assertEquals(new Point(9.0,20.0),p);        
-    }
-    
-    @Test
-    public void subPoint() {
-        p.sub(new Point(6.0,5.0));
-        assertEquals(new Point(-1.0,5.0),p);        
-        
-    }
-    
-    @Test
-    public void scalePoint() {
-        p.scale(4.0);
-        assertEquals(new Point(20.0,40.0),p);        
-    }    
+       
     
 }
