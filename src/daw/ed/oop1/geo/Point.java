@@ -29,11 +29,19 @@ public class Point {
     public double getY() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
+    
+    public void setXY(double x, double y) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
 
     public void setY(double y) {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
 
+    public double distance(double x, double y) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+    
     public double distance(Point p) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
