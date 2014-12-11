@@ -27,13 +27,13 @@ public class PointTest {
     public void testSettersAndGetters() {
         p.setX(10.0);
         p.setY(20.0);
-        assertTrue(p.getX() == 10.0 && p.getY() == 20.0);   
+        assertTrue(p.getX() == 10.0 && p.getY() == 20.0);
         p.setXY(80.0,90.0);
-        assertTrue(p.getX() == 80.0 && p.getY() == 90.0);   
+        assertTrue(p.getX() == 80.0 && p.getY() == 90.0); 
     }
     
     @Test
     public void testDistance() {
+          
     }
-    
 }
