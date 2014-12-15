@@ -17,7 +17,7 @@ public class OOP1 {
     // test client
     public static void main(String[] args) {
 
-        //initStdDraw();
+        initStdDraw();
         
         ArrayList<Point> points = new ArrayList<>();
 
@@ -25,15 +25,33 @@ public class OOP1 {
         points.add(new Point(4,5));
         points.add(new Point(20,40));
         points.add(new Point(90,34));
+        points.add(new Point(60,25));
+        points.add(new Point(25,60));
+        points.add(new Point(34,90));
+        points.add(new Point(40,20));
+        points.add(new Point(5,4));
+        points.add(new Point(-40,-20));
+        points.add(new Point(-90,-34));
+        points.add(new Point(-60,-25));
+        points.add(new Point(-25,-60));
+        points.add(new Point(-34,-90));
+        points.add(new Point(90,90));
+        points.add(new Point(-90,-90));
         
+        
+        //show points to stdoutput
         for (Point p:points) {
             System.out.println(p);
+            p.render();
         }
+        
         
     }
     
     public static void initStdDraw() {
         StdDraw.setXscale(-100, +100);
         StdDraw.setYscale(-100, +100);
+        StdDraw.setPenColor(Color.BLACK);
+        StdDraw.setPenRadius(0.01);
     }
 }    
