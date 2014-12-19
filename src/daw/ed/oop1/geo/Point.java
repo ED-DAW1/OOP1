@@ -1,48 +1,81 @@
 package daw.ed.oop1.geo;
 
+import edu.princeton.cs.introcs.StdDraw;
+import java.awt.Color;
+
 /**
  * Point class
  * @author carlos
  */
 public class Point {
     //Member attributes
-    private double x;
-    private double y;    
+    protected double  x;
+    protected double  y;  
+    protected Color   c;
     
     
     public Point() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        this.x = 0;
+        this.y = 0;
     }
     
     public Point(double x, double y) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        this.x = x;
+        this.y = y;
     }
     
+    public Point(double x, double y,Color c) {
+        this.x = x;
+        this.y = y;
+        this.c = c;
+    }
+    
+    
+    
     public double getX() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return this.x;
     }
     
     public void setX(double x) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        this.x = x;
     }
 
     public double getY() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return this.y;
+    }
+    
+    public void setY(double y) {
+        this.y = y;
     }
     
     public void setXY(double x, double y) {
-        throw new UnsupportedOperationException("Not supported yet."); 
-    }
-
-    public void setY(double y) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        this.x = x;
+        this.y = y;
     }
 
     public double distance(double x, double y) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        double xDiff = this.x - x;
+        double yDiff = this.y - y;
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);
+        
     }
     
     public double distance(Point p) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        double xDiff = this.x - p.getX();
+        double yDiff = this.y - p.getY();
+        return Math.sqrt(xDiff*xDiff + yDiff*yDiff);        
     }
+    
+    public void render() {
+        Color tmp = StdDraw.getPenColor();
+        StdDraw.setPenColor(this.c);
+        StdDraw.point(this.x, this.y);
+        StdDraw.setPenColor(tmp);
+    }
+    
+    @Override
+    public String toString(){        
+       return "Punto {x:" + this.x + ", y:" + this.y +"}"; 
+    }
+    
 }
